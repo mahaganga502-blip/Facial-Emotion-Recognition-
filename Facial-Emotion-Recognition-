@@ -1,0 +1,24 @@
+print("Facial Emotion Recognition")
+print("--------------------------")
+smile = int(input("Is the person smiling? (1 = Yes, 0 = No): "))
+eyes_open = int(input("Are the eyes open? (1 = Yes, 0 = No): "))
+eyebrows_up = int(input("Are the eyebrows raised? (1 = Yes, 0 = No): "))
+if smile == 1 and eyes_open == 1:
+    emotion = "Happy"
+elif smile == 0 and eyes_open == 0:
+    emotion = "Sad"
+elif eyebrows_up == 1 and eyes_open == 1:
+    emotion = "Surprised"
+else:
+    emotion = "Neutral"
+print("\nDetected Emotion:", emotion)
+
+
+OUTPUT:
+Facial Emotion Recognition
+--------------------------
+Is the person smiling? (1 = Yes, 0 = No): 0
+Are the eyes open? (1 = Yes, 0 = No): 0
+Are the eyebrows raised? (1 = Yes, 0 = No): 0
+
+Detected Emotion: Sad
